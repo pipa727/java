@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 4</title>
+    <script>
+        function multiplicarValores() {
+            var valorA = parseFloat(document.getElementById("valorA").value);
+            var valorB = parseFloat(document.getElementById("valorB").value);
+
+            var resultado = valorA * valorB;
+
+            document.getElementById("valorTotal").value = resultado;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="valorA">Valor A:</label>
+        <input type="text" id="valorA" name="valorA">
+
+        <label for="valorB">Valor B:</label>
+        <input type="text" id="valorB" name="valorB">
+
+        <label for="valorTotal">Valor Total:</label>
+        <input type="text" id="valorTotal" name="valorTotal" readonly>
+
+        <button type="button" onclick="multiplicarValores()">Calcular</button>
+    </form>
+</body>
+</html>

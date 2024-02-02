@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 2</title>
+    <script>
+        function confirmacaoCurso() {
+            var resposta = confirm("Você está gostando do curso?");
+
+            if (resposta) {
+                document.body.innerHTML += "<p>Parabéns!</p>";
+            } else {
+                document.body.innerHTML += "<p>Que pena!</p>";
+            }
+        }
+
+        function mensagemAlerta() {
+            alert("Bem-vindo à recuperação de JavaScript");
+        }
+
+        var soma = 5 + 3;
+        document.body.innerHTML += "<p>A soma de 5 e 3 é igual a " + soma + "</p>";
+    </script>
+</head>
+<body onload="mensagemAlerta()">
+    <script>
+        // Exemplo de chamada da função de confirmação
+        confirmacaoCurso();
+    </script>
+</body>
+</html>

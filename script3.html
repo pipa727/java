@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 3</title>
+    <script>
+        function analisarTexto() {
+            var texto = document.getElementById("inputTexto").value;
+
+            var tamanho = texto.length;
+            var maiusculo = texto.toUpperCase();
+            var minusculo = texto.toLowerCase();
+
+            alert("Tamanho da String: " + tamanho + "\nString em maiúsculo: " + maiusculo + "\nString em minúsculo: " + minusculo);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="inputTexto">
+    <button onclick="analisarTexto()">Analisar Texto</button>
+</body>
+</html>
